@@ -1,0 +1,120 @@
+body{
+    background-color: rgb(190, 171, 145);
+}
+*{
+    padding:0;
+    margin:0;
+}
+.container{
+    padding-top: 3vh;
+    width: 65vw;
+    display: inline-block;
+    order:2;
+}
+#canvas{
+    display: block;
+    position: relative;
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+.pixel{
+    margin:1px;
+    padding:1%
+}
+.pixel:hover{
+    cursor: pointer;
+}
+#colour{
+    float:left;
+    width: 19vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 2vh;
+    padding-left: 1vw;
+
+    order:1;
+}
+#colour div{
+    width: 100%;
+}
+#colour div p{
+    display: inline-block;
+}
+#colourPicker{
+    margin-left: 5%;
+}
+#button{
+    padding:0.5rem;
+}
+#main{
+    display: none;
+}
+#connectWallet{
+    position: relative;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    top:20vh;
+
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3em;
+    font-weight: bold;
+
+    transition: all 1s;
+
+}
+#connectWallet:hover{
+    cursor: pointer;
+    background-color: #3a8f3d;
+}
+#initContainer{
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+.flexCenter{
+    align-items: center;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+#txStatus{
+    font-weight: bold;
+    color:#464646;
+}
+#allPictures{
+    text-align: center;
+    margin-top: 2px;
+}
+#allPictures li{
+    cursor: pointer;
+    padding: 5%;
+    background-color: #9e9e9e;
+    margin-top: 2px;
+    transition: all 0.3s;
+}
+#allPictures li:hover{
+    background-color: #5a5a5a;
+}
+input[type=text] {
+    text-align: center;
+    width: 35%;
+    padding: 1% 10%;
+    margin: 1% 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
